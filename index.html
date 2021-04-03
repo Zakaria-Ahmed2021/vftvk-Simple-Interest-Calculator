@@ -6,11 +6,38 @@
     <body>
         <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        <div class="first">
+        <label for="Amount">Amount</label>
+        <input type="text" step="1" id="principal"></div>  <br/>
 
-        <button onclick="compute()">Compute</button>
+        <div class="first">
+        <label for="Interest Rate">Interest Rate</label>
+        <input type="range" class="percent" id="rate" value="0" min="0" max="25" step="0.1" oninput="this.nextElementSibling.value = this.value">
+        <output>0</output></div>  <br/>
+
+        <div class="first">
+        <label for="No. of Years">No. of Years</label>
+        <select name="No. of Years" id="years">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        </select></div>  <br/>
+
+        <div class="first">
+        <button onclick="compute()">Compute Interest</button></div>
+
+        <div id="num0"> </div>
+        <div id="num2"> </div>
+        <div id="num"> </div>
+        <div id="num1"></div>
+
+        <h4>© Everyone Can Get Rich</h4>
     </body>
 </html>
