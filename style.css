@@ -3,22 +3,24 @@ font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
 }
 
 h1{color:grey;
+	text-align: center;
 font-size: 3em;}
 
 div.first {
   padding-top: 1px;
   padding-right: 10px;
-  padding-left: 70px;
+  padding-left: 110px;
 }
 div {
   padding-right: 10px;
-  padding-left: 70px;
+  padding-left: 110px;
 }
 label {
 	width: 100px;
 	display: inline-block;
 }
 div.sec {
+  margin:0 auto;
   border-radius: 25px;
   background: white;
   padding: 20px; 
