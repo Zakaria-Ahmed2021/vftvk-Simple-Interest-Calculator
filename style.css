@@ -1,4 +1,4 @@
-body {background-color:white;
+body {background-color:black;
 font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
 }
 
@@ -8,15 +8,43 @@ font-size: 3em;}
 div.first {
   padding-top: 1px;
   padding-right: 10px;
-  padding-left: 50px;
+  padding-left: 70px;
 }
-
 div {
   padding-right: 10px;
-  padding-left: 50px;
+  padding-left: 70px;
 }
-
 label {
 	width: 100px;
 	display: inline-block;
+}
+div.sec {
+  border-radius: 25px;
+  background: white;
+  padding: 20px; 
+  width: 530px;
+  height: 400px;
+}
+.button {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.highlight {
+  background-color: yellow;
 }
