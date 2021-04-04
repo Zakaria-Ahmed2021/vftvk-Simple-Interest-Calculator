@@ -1,19 +1,21 @@
-<html>
+<!DOCTYPE html>
     <head>
+    <title>Web App – Simple Interest Calculator</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div class="sec">
         <h1>Simple Interest Calculator</h1>
 
         <div class="first">
         <label for="Amount">Amount</label>
-        <input type="text" step="1" id="principal"></div>  <br/>
+        <input type="text" name="Amount" step="1" id="principal"></div>  <br/>
 
         <div class="first">
         <label for="Interest Rate">Interest Rate</label>
-        <input type="range" class="percent" id="rate" value="0" min="0" max="25" step="0.1" oninput="this.nextElementSibling.value = this.value">
-        <output>0</output></div>  <br/>
+        <input type="range" class="percent" id="rate" value="1" min="1" max="20" step="0.1" oninput="this.nextElementSibling.value = this.value">
+        <output>1</output></div><br/>
 
         <div class="first">
         <label for="No. of Years">No. of Years</label>
@@ -31,13 +33,13 @@
         </select></div>  <br/>
 
         <div class="first">
-        <button onclick="compute()">Compute Interest</button> </div>
+        <button class="button" onclick="compute()">Compute Interest</button></div>
 
         <div id="num0"> </div>
         <div id="num2"> </div>
         <div id="num"> </div>
         <div id="num1"></div>
 
-        <h4>© Everyone Can Get Rich</h4>
+        <h4>© Everyone Can Get Rich</h4></div>
     </body>
 </html>
